@@ -1,7 +1,7 @@
 {
   "name": "acquire-exports",
   "type": "module",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "packageManager": "pnpm@7.9.0",
   "description": "",
   "author": "Joruno <1710642275@qq.com>",
