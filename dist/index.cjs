@@ -1,7 +1,12 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
+async function getExports(name) {
+  const pkg = await import(name);
+  const keys = Object.keys(pkg);
+  if (keys.length === 1 && keys[0] === "default") {
+    return Object.keys(pkg.default);
+  }
+  return keys;
+}
 
-const add = (a, b) => a + b;
-
-exports.add = add;
+module.exports = getExports;

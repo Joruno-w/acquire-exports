@@ -1,3 +1,3 @@
-declare const add: (a: number, b: number) => number;
+declare function getExports(name: string): Promise<string[]>;
 
-export { add };
+export { getExports as default };
